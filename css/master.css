@@ -197,7 +197,7 @@ header .links ul li:last-child:hover {
 @media (max-width: 885px) {
   header .logo {
     left: 50%;
-    transform: translateX(-50%) scale(1) !important; 
+    transform: translateX(-50%) scale(1) !important;
     width: 60px;
     box-shadow: none !important;
   }
@@ -206,7 +206,7 @@ header .links ul li:last-child:hover {
   }
   header .logo h4,
   header .logo p {
-    transform: rotate(0)!important;
+    transform: rotate(0) !important;
   }
   header {
     padding-bottom: 0px;
@@ -340,7 +340,10 @@ header .links ul li:last-child:hover {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .landing .text p {
+}
+@media (max-width: 710px) {
+  .landing .text h2  {
+    font-size: 70px;
   }
 }
 /* end landing */
