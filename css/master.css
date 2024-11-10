@@ -384,6 +384,56 @@ header nav ul li:hover a::after {
   }
 }
 /* end landing */
+/* start store */
+.store {
+  background-color: var(--fourth-color);
+  height: 100vh;
+  padding: 100px 0;
+}
+
+.store .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  place-items: center;
+  gap: 40px;
+}
+
+.store .container .card {
+  background-color: var(--main-color);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.store .container .card .img img{
+  max-width: 100%;
+  background-color: var(--third-color-opacity);
+  border-radius: 3px;
+}
+
+.store .container .card .text h3 {
+  color: var(--fourth-color);
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.store .container .card .text span {
+  color: var(--second-color);
+  background-color: #ffbb00;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.store .container .card .text a {
+  background-color: var(--third-color-opacity);
+  color: var(--second-color);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+/* end store */
 /* start animations */
 @keyframes filling {
   0% {
@@ -479,6 +529,7 @@ header nav ul li:hover a::after {
 
 .cubie-corner-orientation-0 {
 }
+
 .cubie-corner-orientation-1 {
   transform: rotateY(-90deg) rotateX(90deg);
 }
