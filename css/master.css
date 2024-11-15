@@ -4,10 +4,12 @@
   --second-color: #f0f9fe;
   --third-color: #bf296a;
   --fourth-color: #37b9a0;
+  --fifth-color: #ffbb00;
   --main-color-opacity: #12164380;
   --second-color-opacity: #f0f9fe98;
   --third-color-opacity: #bf296a80;
   --fourth-color-opacity: #37b9a080;
+  --fifth-color-opacity: #ffbb0090;
 }
 /* end variables */
 /* start global rules */
@@ -386,58 +388,84 @@ header nav ul li:hover a::after {
 /* end landing */
 /* start store */
 .store {
-  background-color: var(--fourth-color);
-  height: 100vh;
+  background-color: var(--main-color);
   padding: 100px 0;
+  min-height: 100vh;
 }
 
 .store .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 0.97fr));
   place-items: center;
   gap: 40px;
 }
 
 .store .container .card {
-  background-color: var(--main-color);
+  background-color: var(--third-color);
   padding: 20px;
   border-radius: 20px;
   text-align: center;
+  transition: 0.5s;
+}
+
+.store .container .card:hover {
+  transform: rotate(5deg);
+  background-color: var(--third-color-opacity);
 }
 
 .store .container .card .img img{
   max-width: 100%;
-  background-color: var(--third-color-opacity);
+  background-color: var(--main-color);
   border-radius: 3px;
+  transition: 0.3s;
+}
+
+.store .container .card .img:hover img {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: scale(1.01);
 }
 
 .store .container .card .text h3 {
   color: var(--fourth-color);
   font-size: 25px;
   margin-top: 5px;
+  cursor: pointer;
 }
 
 .store .container .card .text span {
   color: var(--second-color);
-  background-color: #ffbb00;
+  background-color: var(--fifth-color);
   display: inline-block;
   padding: 5px;
   border-radius: 10px;
   margin: 20px 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.store .container .card .text span:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .store .container .card .text a {
-  background-color: var(--third-color-opacity);
+  background-color: var(--main-color);
   color: var(--second-color);
   padding: 10px;
   border-radius: 10px;
   font-weight: bold;
+  transition: 0.5s;
+}
+
+.store .container .card .text a:hover {
+  background-color: var(--second-color);
+  color: var(--main-color);
 }
 /* end store */
 /* start animations */
 @keyframes filling {
   0% {
-    left: -200px;
+    left: -100%;
   }
   100% {
     left: 0;
