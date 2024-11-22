@@ -395,17 +395,20 @@ header nav ul li:hover a::after {
 
 .store .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 0.97fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   place-items: center;
   gap: 40px;
+  padding: 15px;
 }
 
 .store .container .card {
-  background-color: var(--third-color);
+  background-color: var(--fourth-color);
   padding: 20px;
   border-radius: 20px;
   text-align: center;
   transition: 0.5s;
+  height: 440px;
+  position: relative;
 }
 
 .store .container .card:hover {
@@ -426,10 +429,11 @@ header nav ul li:hover a::after {
 }
 
 .store .container .card .text h3 {
-  color: var(--fourth-color);
+  color: var(--third-color);
   font-size: 25px;
   margin-top: 5px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .store .container .card .text span {
@@ -437,8 +441,8 @@ header nav ul li:hover a::after {
   background-color: var(--fifth-color);
   display: inline-block;
   padding: 5px;
+  margin: 15px 5px 5px;
   border-radius: 10px;
-  margin: 20px 0;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -446,6 +450,13 @@ header nav ul li:hover a::after {
 .store .container .card .text span:hover {
   transform: scale(1.1);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.store .container .card .text .link-container {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 30px;
 }
 
 .store .container .card .text a {
