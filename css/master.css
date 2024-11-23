@@ -411,16 +411,16 @@ header nav ul li:hover a::after {
   border-radius: 20px;
   text-align: center;
   transition: 0.5s;
-  height: 440px;
+  height: 370px;
   position: relative;
 }
 
 .store .container .card:hover {
-  transform: rotate(3deg);
+  transform: rotate(2deg);
   background-color: var(--third-color-opacity);
 }
 
-.store .container .card .img img{
+.store .container .card .img img {
   max-width: 100%;
   background-color: var(--main-color);
   border-radius: 3px;
@@ -475,6 +475,18 @@ header nav ul li:hover a::after {
 .store .container .card .text a:hover {
   background-color: var(--second-color);
   color: var(--main-color);
+}
+
+@media (max-width: 690px) {
+  .store .container .card .img img {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 520px) {
+  .store .container .card .img img {
+    max-width: 100%;
+  }
 }
 /* end store */
 /* start animations */
