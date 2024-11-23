@@ -23,9 +23,12 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Roboto, sans-serif;
-  overflow: hidden;
 }
 
 .container {
@@ -413,7 +416,7 @@ header nav ul li:hover a::after {
 }
 
 .store .container .card:hover {
-  transform: rotate(5deg);
+  transform: rotate(3deg);
   background-color: var(--third-color-opacity);
 }
 
