@@ -1,14 +1,14 @@
 /* start variables */
 :root {
-  --main-color: #121643;
+  --main-color: #ac2828;
   --second-color: #f0f9fe;
-  --third-color: #bf296a;
-  --fourth-color: #37b9a0;
+  --third-color: #e72525;
+  --fourth-color: #376fb9;
   --fifth-color: #ffbb00;
   --main-color-opacity: #12164380;
   --second-color-opacity: #f0f9fe98;
   --third-color-opacity: #bf296a80;
-  --fourth-color-opacity: #37b9a080;
+  --fourth-color-opacity: #376fb980;
   --fifth-color-opacity: #ffbb0090;
 }
 /* end variables */
@@ -487,6 +487,14 @@ header nav ul li:hover a::after {
   .store .container .card .img img {
     max-width: 100%;
   }
+}
+
+.store .bar1,
+.store .bar2 {
+  height: 100vh;
+  width: 10px;
+  background-color: var(--second-color);
+  position: absolute;
 }
 /* end store */
 /* start animations */
